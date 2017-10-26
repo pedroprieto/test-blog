@@ -1,0 +1,19 @@
+# Jekyll
+_site
+.sass-cache
+.jekyll-metadata
+
+# Backups
+*~*
+# Logs
+logs
+*.log
+.tern-port
+# Runtime data
+pids
+*.pid
+*.seed
+
+# Ruby
+/.bundle
+/vendor/bundle
