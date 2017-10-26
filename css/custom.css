@@ -19,10 +19,6 @@
 .navbar-link.active {
     color: #33C3F0; }
 
-[role=search] label {
-    display: none;
-}
-
 /* Sticky footer*/
 body > .container {
     min-height: 100vh;
@@ -51,3 +47,9 @@ body > .container {
 .feed:before{
     content:url("/img/feed-icon-28x28.png");
 } 
+
+@media only screen {
+    [role=search] label {
+        display: none;
+    }
+}
