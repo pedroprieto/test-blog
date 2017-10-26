@@ -1,30 +1,13 @@
 <nav class="navbar"> 
   <div class="container">
     <ul class="navbar-list">
-          <li class="navbar-item">
-            <a class="navbar-link" href="{{ site.baseurl }}">Home</a>
-          </li>
-          {% for my_page in site.pages %}
-          {% if my_page.title %}
-          <li class="navbar-item">
-            <a class="navbar-link" href="{{ site.baseurl }}{{ my_page.url }}">{{ my_page.title | escape }}</a>
-          </li>
-          {% endif %}
-          {% endfor %}
+      {% for my_page in site.pages %}
+      {% if my_page.title %}
+      <li class="navbar-item">
+        <a class="navbar-link" href="{{ site.baseurl }}{{ my_page.url }}">{{ my_page.title | escape }}</a>
+      </li>
+      {% endif %}
+      {% endfor %}
     </ul>
   </div>
 </nav>
-
-
-
-        <!--logo start-->
-<!-- <a class="logo-brand " href="{{ site.baseurl }}/"> -->
-<!-- <img class="retina" src="{{ site.baseurl }}/assets/img/logo.png" alt="{{ site.title | escape }}" /> -->
-<!-- </a> -->
-        <!--logo end-->
-
-
-
-
-
-
