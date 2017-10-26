@@ -1,3 +1,6 @@
+---
+---
+
 .navbar > .container {
     width: 100%; }
 .navbar-list {
@@ -45,7 +48,7 @@ body > .container {
     text-align: center;
 }
 .feed:before{
-    content:url("/img/feed-icon-28x28.png");
+    content:url("{{site.baseurl}}/img/feed-icon-28x28.png");
 } 
 
 /* Ocultar etiqueta form búsqueda */
