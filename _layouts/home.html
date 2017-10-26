@@ -5,16 +5,17 @@ layout: default
   {{content}}
 </section>
 
-<section>
+<section class="home-post-list">
   <header>
-    <h2>Últimos posts</h2>
+    <h1>Últimos posts</h1>
+    <hr>
   </header>
   {% for post in site.posts limit:3 %}  
   <article>
     <header>
-      <h3>
+      <h2>
         <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a>
-      </h3>
+      </h2>
       <p><span class="post-meta">{{post.date | date: "%-d %b, %y"}}</span> <!-- <span>{{post.tags}}</span> --></p>
     </header>
     {{post.excerpt}}

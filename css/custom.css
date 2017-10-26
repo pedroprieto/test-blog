@@ -22,3 +22,32 @@
 [role=search] label {
     display: none;
 }
+
+/* Sticky footer*/
+body > .container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.archive, .post, .home-post-list{
+    flex: 1;
+}
+/* End sticky footer*/
+
+/* Footer */
+.footer-license {
+    font-size: 0.8em;
+    text-align: center;
+}
+.footer-icons {
+    display: flex;
+}
+.footer-icons > div {
+    flex: 1 1 auto;
+}
+.footer-icons-github, .footer-icons-feed {
+    text-align: center;
+}
+.feed:before{
+    content:url("/img/feed-icon-28x28.png");
+} 
