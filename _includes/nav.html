@@ -1,7 +1,7 @@
 <nav class="navbar"> 
   <div class="container">
     <ul class="navbar-list">
-      {% for my_page in site.pages %}
+      {% for my_page in site.pages reversed %}
       {% if my_page.title %}
       <li class="navbar-item">
         <a class="navbar-link" href="{{ site.baseurl }}{{ my_page.url }}">{{ my_page.title | escape }}</a>
