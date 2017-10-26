@@ -4,7 +4,7 @@
       {% for my_page in site.pages reversed %}
       {% if my_page.title %}
       <li class="navbar-item">
-        <a class="navbar-link" href="{{ site.baseurl }}{{ my_page.url }}">{{ my_page.title | escape }}</a>
+        <a class="navbar-link {% if page.url == my_page.url %}active{% endif%}" href="{{ site.baseurl }}{{ my_page.url }}">{{ my_page.title | escape }}</a>
       </li>
       {% endif %}
       {% endfor %}
