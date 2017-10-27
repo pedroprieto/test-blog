@@ -1,0 +1,8 @@
+<form method="post" action="https://api.staticman.net/v2/entry/pedroprieto/test-blog/gh-pages/comments">
+  <input name="options[redirect]" type="hidden" value="{{site.url}}{{site.baseurl}}{{ page.url}}">
+  <input name="options[slug]" type="hidden" value="{{ page.slug }}">
+  <label><input name="fields[name]" type="text" placeholder="Nombre">Nombre</label>
+  <label><input name="fields[email]" type="email" placeholder="Correo electrónico">Correo</label>
+  <label><textarea name="fields[message]" placeholder="Texto del mensaje..."></textarea>Mensaje</label>
+  <button type="submit">Enviar</button>
+</form>
