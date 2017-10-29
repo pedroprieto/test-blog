@@ -57,3 +57,30 @@ body > .container {
         display: none;
     }
 }
+
+.comment {
+    display: grid;
+    grid-template-areas: "avatar date"
+                             "avatar message";
+    grid-template-columns: 1fr 9fr;
+    margin-bottom: 1em;
+    box-shadow: 4px 4px grey;
+    border: 1px solid black;
+
+}
+
+.comment-author {
+    grid-area: avatar;
+    padding: 1em;
+}
+
+.comment-date {
+    grid-area: date;
+    margin: 1em 1em 0 1em;
+    text-align: right;
+}
+
+.comment-message {
+    grid-area: message;
+    margin: 1em;
+}

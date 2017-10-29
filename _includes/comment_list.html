@@ -4,18 +4,17 @@
 {% assign name = comment[1].name %}
 {% assign comment_date = comment[1].date %}
 {% assign message = comment[1].message %}
-<article itemprop="comment" itemscope itemtype="http://schema.org/Comment">
-  <p class="comment__author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+<article class="comment container" itemprop="comment" itemscope itemtype="http://schema.org/Comment">
+  <div class="comment-author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img itemprop="image" class="comment-avatar" src="https://www.gravatar.com/avatar/{{email}}?d=mm&amp;s=50" srcset="https://www.gravatar.com/avatar/{{email}}?d=mm&amp;s=100 2x" alt="{{name}}">
     <span itemprop="givenName">{{name}}</span>
-    <img itemprop="image" class="comment__avatar" src="https://www.gravatar.com/avatar/{{email}}?d=mm&amp;s=50" srcset="https://www.gravatar.com/avatar/{{email}}?d=mm&amp;s=100 2x" alt="{{name}}">
-  </p>
+  </div>
 
-  <div class="comment__date">
+  <div class="comment-date">
     <time datetime="{{comment_date | date: '%Y-%m-%dT%k:%M:%S' }}" itemprop="datePublished">{{comment_date | date: "%d/%m/%y, %k:%M" }}</time>
   </div>
 
-  <div itemprop="text"><p>{{message}}</p></div>
-  </div>
+  <div class="comment-message" itemprop="text"><p>{{message}}</p></div>
 </article>
 {% endfor %}
 
