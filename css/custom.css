@@ -56,12 +56,17 @@ body > .container {
     [role=search] label {
         display: none;
     }
+
+    .comment-form label {
+        display: none;
+    }
 }
 
 .comment {
     display: grid;
-    grid-template-areas: "avatar date"
-                             "avatar message";
+    grid-template-areas: "avatar message"
+                             "avatar message"
+                             "avatar date";
     grid-template-columns: 1fr 9fr;
     margin-bottom: 1em;
     box-shadow: 4px 4px grey;
@@ -76,11 +81,20 @@ body > .container {
 
 .comment-date {
     grid-area: date;
-    margin: 1em 1em 0 1em;
+    margin: 1em 1em 1em 1em;
     text-align: right;
 }
 
 .comment-message {
     grid-area: message;
     margin: 1em;
+}
+
+.comment-form input {
+    width: 100%;
+}
+
+.comment-form textarea {
+    width: 100%;
+    min-height: 6em;
 }

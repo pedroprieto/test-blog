@@ -1,8 +1,16 @@
-<form method="post" action="https://api.staticman.net/v2/entry/pedroprieto/test-blog/gh-pages/comments">
+<article class="comment-form" itemprop="comment" itemscope itemtype="http://schema.org/Comment">
+  <header>
+    <h2>Añadir un comentario...</h2>
+  </header>
+<form class="container" method="post" action="https://api.staticman.net/v2/entry/pedroprieto/test-blog/gh-pages/comments">
   <input name="options[redirect]" type="hidden" value="{{site.url}}{{site.baseurl}}{{ page.url}}">
   <input name="options[slug]" type="hidden" value="{{ page.slug }}">
-  <label><input name="fields[name]" type="text" placeholder="Nombre">Nombre</label>
-  <label><input name="fields[email]" type="email" placeholder="Correo electrónico">Correo</label>
-  <label><textarea name="fields[message]" placeholder="Texto del mensaje..."></textarea>Mensaje</label>
-  <button type="submit">Enviar</button>
+  <label for="comment-form-name">Nombre</label>
+  <input id="comment-form-name" name="fields[name]" type="text" placeholder="Nombre">
+  <label for="comment-form-email">Correo</label>
+  <input id="comment-form-email" name="fields[email]" type="email" placeholder="Correo electrónico">
+  <label for="comment-form-message">Mensaje</label>
+  <textarea id="comment-form-message" name="fields[message]" placeholder="Texto del mensaje..."></textarea>
+  <button class="button-primary" type="submit">Enviar</button>
 </form>
+</article>
