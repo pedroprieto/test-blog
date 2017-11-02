@@ -10,7 +10,7 @@ layout: default
   <article>
     {{content}}
     <h2>Lista de temas</h2>
-    <ul>
+    <ul class="lista">
       {% for tema in site[page.curso] %}  
       <li>
         <a href="{{ site.baseurl }}{{ tema.url }}">{{ tema.title }}</a>

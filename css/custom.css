@@ -98,3 +98,24 @@ body > .container {
     width: 100%;
     min-height: 6em;
 }
+
+.lista {
+    list-style: none;
+}
+.lista li {
+    background: #EEE;
+    border-radius: 4px;
+}
+
+.lista li a {
+    display: block;
+    margin: 0;
+    padding: 1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.lista li a::after {
+    content: ">>";
+    float: right;
+
+}

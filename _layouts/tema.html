@@ -11,7 +11,7 @@ layout: default
   <article>
     {{content}}
     <h2>Contenidos</h2>
-    <ul>
+    <ul class="lista">
       {% for post in site.categories[page.collection] %}  
       {% if post.categories contains page.tema %}
       <li>

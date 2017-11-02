@@ -12,7 +12,7 @@ title: Cursos
     <p>Esta sección está pensada para que sea el punto de entrada de los alumnos a los que doy clase. Desde aquí podrán acceder al módulo que estén cursando y ver los contenidos organizados por materias y temas.</p>
     <p>Si no eres un alumno es posible que te interese más buscar la información de tu interés en la sección <a href="{{site.baseurl}}/archivo">Archivo</a>.</p>
     <h2>Lista de cursos</h2>
-    <ul>
+    <ul class="lista">
       {% for curso in site.cursos %}  
       <li>
         <a href="{{ site.baseurl }}{{ curso.url}}">{{curso.title}}</a>
