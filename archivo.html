@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Archivo
-permalink: /archivo/
+permalink: /archivo
 ---
 
 <section class="archive">
@@ -10,10 +10,21 @@ permalink: /archivo/
     <hr>
   </header>
   <ul class="archive-list">
+    <li class="archive-item">
+      <span class="archive-item-post">
+    Artículo
+      </span>
+      <span class="archive-item-date">
+        Fecha
+      </span>
+    </li>
   {% for post in site.posts%}  
     <li class="archive-item">
       <span class="archive-item-post">
         <a href="{{site.baseurl}}{{ post.url }}">{{ post.title }}</a>
+      </span>
+      <span class="archive-item-date">
+        {{ post.date | date: "%-d/%m/%y"}}
       </span>
       <span class="archive-item-category-list"> 
         {% for category in post.categories %}
