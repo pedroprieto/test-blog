@@ -36,5 +36,5 @@ exclude:
 collections:
   cursos:
     output: true
-  daw:
+  diw:
     output: true
