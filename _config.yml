@@ -33,3 +33,8 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - vendor/bundle
+collections:
+  cursos:
+    output: true
+  daw:
+    output: true

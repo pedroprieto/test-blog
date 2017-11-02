@@ -1,0 +1,24 @@
+---
+layout: default
+---
+
+<section class="tema">
+  <header>
+    <h1>Curso de {{page.curso}} - Tema {{page.title}}</h1>
+    <hr>
+  </header>
+  <article>
+    {{content}}
+    <h2>Contenidos</h2>
+    <ul>
+      {% for post in site.categories[page.collection] %}  
+      {% if post.categories contains page.tema %}
+      <li>
+        <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+        <!-- <span class="post-meta">{{post.date | date: "%-d %b, %y"}}</span> <!-- <span>{{post.tags}}</span> -->
+      </li>
+      {% endif %}
+      {% endfor %}  
+    </ul>
+  </article>
+</section>

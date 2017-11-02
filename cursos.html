@@ -1,0 +1,22 @@
+---
+layout: default
+title: Cursos
+---
+
+<section class="cursos">
+  <header>
+    <h1>Cursos</h1>
+    <hr>
+  </header>
+  <article>
+    Explicación clases....
+    <h2>Lista de cursos</h2>
+    <ul>
+      {% for curso in site.cursos %}  
+      <li>
+        <a href="{{ site.baseurl }}{{ curso.url}}">{{curso.title}}</a>
+      </li>
+      {% endfor %}  
+    </ul>
+  </article>
+</section>

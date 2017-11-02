@@ -28,7 +28,7 @@ body > .container {
     display: flex;
     flex-direction: column;
 }
-.archive, .post, .home-post-list{
+.archive, .post, .home-post-list, .cursos, .curso, .tema, .about {
     flex: 1;
 }
 /* End sticky footer*/

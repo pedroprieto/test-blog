@@ -1,0 +1,22 @@
+---
+layout: default
+---
+
+<section class="curso">
+  <header>
+    <h1>Curso de {{page.title}}</h1>
+    <hr>
+  </header>
+  <article>
+    {{content}}
+    <h2>Lista de temas</h2>
+    <ul>
+      {% for tema in site[page.curso] %}  
+      <li>
+        <a href="{{ site.baseurl }}{{ tema.url }}">{{ tema.title }}</a>
+        <!-- <span class="post-meta">{{post.date | date: "%-d %b, %y"}}</span> <!-- <span>{{post.tags}}</span> -->
+      </li>
+      {% endfor %}
+    </ul>
+  </article>
+</section>
